@@ -4,6 +4,8 @@
 :root{
     --PrimaryBg: #1c1c1d;
     --navBg: #252728;
+    --textColor:#ffffffc6;
+    --primaryHoverBg:#434344ad;
 }
 
 *{
@@ -114,4 +116,93 @@ body{
 }
 .dropdownIcon > img{
     width: 15px;
+}
+/* Sidebar Starts Here */
+.sidebar{
+    width: 23rem;
+    padding: 1rem .6rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+.navigationContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+.sideNavItems{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    height: 3.2rem;
+    border-radius: .7rem;
+    padding-left: .5rem;
+    cursor: pointer;
+    transition: .5s all;
+}
+.sideNavItems:hover{
+    background-color: var(--primaryHoverBg);
+}
+.sideNavIcon{
+    width: 36px;
+    height: 36px;
+}
+.sideNavTxt{
+    color: var(--textColor);
+    font-size: .9rem;
+    font-weight: bold;
+}
+.friendsFill{
+    background-image: url("../assets/sidebarIcons/icons.png");
+    background-position: 0px -333px;
+    background-repeat: no-repeat;
+}
+.pd{
+    background-image: url("../assets/sidebarIcons/professionalDashboard.png");
+}
+.feeds{
+    background-image: url("../assets/sidebarIcons/feeds.png");
+}
+.groups{
+    background-image: url("../assets/sidebarIcons/icons.png");
+    background-position: 0px -37px;
+    background-repeat: no-repeat;
+}
+.marketplaceFill{
+    background-image: url("../assets/sidebarIcons/icons.png");
+    background-position: 0px -444px;
+}
+.sidebarSeeMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navBg);
+    border-radius: 50%;
+}
+.sidebarSeeMore >img{
+    width: 1.5rem;
+}
+hr{
+    width: 95%;
+    height: 1px;
+    border: none;
+    background-color: white;
+    margin: 0 auto;
+    opacity: .4;
+}
+.sidebarSubHeading{
+    color: var(--textColor);
+    font-size: 1rem;
+    opacity: .7;
+    padding: 1rem;
+}
+.myGroups{
+    border-radius: .5rem;
+}
+.footer{
+    padding: 1rem;
+    color: var(--textColor);
 }
