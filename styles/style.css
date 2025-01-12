@@ -123,10 +123,10 @@ body{
 .sidebar{
     width: 23rem;
     padding: 1rem .6rem;
-    height: 100vh;
+    height: 94vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
    
 }
 .navigationContainer{
