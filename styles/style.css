@@ -1,0 +1,117 @@
+/* Importing URLs */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --PrimaryBg: #1c1c1d;
+    --navBg: #252728;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--PrimaryBg);
+}
+/* Navbar Starts Here */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--navBg);
+    height: 3.5rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 0 1rem;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    width: 19rem;
+}
+.search>img{
+    width: 2.5rem;
+}
+.searchInput{
+    border: none;
+    border-radius: 2rem;
+    width: 16rem;
+    height: 2.5rem;
+    background-color: #333334;
+    font-size: 1rem;
+    font-family: "Inter", serif;
+    padding-left: 1.5rem;
+
+}
+.primaryNavigation{
+    display: flex;
+    justify-content: space-between;
+    width: 45rem;
+}
+.primaryNavigationIcon{
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    border-radius: .7rem;
+    cursor: pointer;
+    transition: .5s all;
+}
+.primaryNavigationIcon >img{
+    width: 25px;
+}
+.activeNav{
+    border-bottom: .3rem solid #0866ff;
+    border-radius: 0;
+}
+.primaryNavigationIcon:hover{
+    background-color: #434344;
+}
+.userTools{
+    display: flex;
+    justify-content: space-around;
+    width: 13rem;
+}
+.userToolsIcons{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333334;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s all;
+}
+.userToolsIcons:hover{
+    background-color: #424242;
+}
+.userToolsIcons >img{
+    width: 20px;
+}
+.dropDown{
+    position: relative;
+}
+.dropDown > img{
+    width: 100%;
+    border-radius: 50%;
+}
+.dropdownIcon{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dropdownIcon > img{
+    width: 15px;
+}
